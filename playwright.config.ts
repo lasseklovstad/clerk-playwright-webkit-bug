@@ -75,5 +75,8 @@ export default defineConfig({
     command: "npm run start",
     url: "http://localhost:3000",
     reuseExistingServer: !process.env.CI,
+    env: {
+      NODE_ENV: "test",
+    },
   },
 });
